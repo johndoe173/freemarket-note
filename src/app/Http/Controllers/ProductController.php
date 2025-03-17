@@ -11,16 +11,16 @@ class ProductController extends Controller
     // 商品一覧ページ
    public function index(Request $request)
 {
-    $page = $request->query('page', 'recommend');
+    $tab = $request->query('tab', 'recommend');
     $search = $request->query('search');
 
-    if ($page === 'mylist' && Auth::check()) {
+    if ($tab === 'mylist' && Auth::check()) {
         $query = Product::whereHas('likes', function ($query) {
             $query->where('user_id', Auth::id());
         });
     } else {
         $query = Product::where('user_id', '!=', Auth::id());
-        $page = 'recommend';
+        $tab = 'recommend';
     }
 
     if (!empty($search)) {
@@ -29,7 +29,7 @@ class ProductController extends Controller
 
     $products = $query->get();
 
-    return view('index', compact('products', 'page', 'search'));
+    return view('index', compact('products', 'tab', 'search'));
     }
 
     // 商品詳細ページ

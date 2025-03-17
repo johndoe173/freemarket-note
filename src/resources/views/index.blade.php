@@ -10,14 +10,14 @@
         <!-- タブメニュー -->
         <ul class="products__tabs">
             <li class="products__tab">
-                <a href="{{ url('/') }}?page=recommend&search={{ request('search', '') }}" 
-                   class="products__tab-link {{ $page === 'recommend' ? 'products__tab-link--active' : '' }}">
+                <a href="{{ url('/') }}?tab=recommend&search={{ request('search', '') }}" 
+                   class="products__tab-link {{ $tab === 'recommend' ? 'products__tab-link--active' : '' }}">
                     おすすめ
                 </a>
             </li>
             <li class="products__tab">
-                <a href="{{ url('/') }}?page=mylist&search={{ request('search', '') }}" 
-                   class="products__tab-link {{ $page === 'mylist' ? 'products__tab-link--active' : '' }}">
+                <a href="{{ url('/') }}?tab=mylist&search={{ request('search', '') }}" 
+                   class="products__tab-link {{ $tab === 'mylist' ? 'products__tab-link--active' : '' }}">
                     マイリスト
                 </a>
             </li>
