@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header__logo-image {
+    width: 150px;
+    height: auto;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header__search-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__search {
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.header__search-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header__menu {
+    color: #ffffff;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.header__sell-button {
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.header__sell-button:hover {
+    background-color: #a2a2a2;
+}
+
+.header__logout-form {
+    display: inline;
+}
+
+.header__logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
+}

@@ -1,0 +1,94 @@
+/* 商品出品画面のスタイル */
+.product-create {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.product-create__title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-create__form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.product-create__image {
+    border: 1px dashed #000000;
+    padding: 30px 20px;
+}
+
+.product-create__preview-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-create__preview {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-create__details {
+    margin: 30px 0;
+}
+
+.product-create__h3title {
+    border-bottom: solid;
+    color: #616161;
+    margin: 30px 0;
+}
+
+.product-create__label {
+    margin-top: 30px;
+}
+
+.product-create__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.category-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.category-button.selected {
+    background-color: #d9534f;
+}
+
+.product-create__form input[type="text"],
+.product-create__form input[type="number"],
+.product-create__form select,
+.product-create__form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.product-create__submit {
+    width: 100%;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

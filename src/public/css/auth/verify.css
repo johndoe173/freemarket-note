@@ -1,0 +1,42 @@
+/* メール認証誘導画面のスタイル */
+.verify {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.verify__message {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.verify__button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.verify__button:hover {
+    background-color: #bbb;
+}
+
+.verify__resend-form {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.verify__resend-button {
+    color: #007bff;
+}
+
+.verify__resend-button:hover {
+    text-decoration: underline;
+}

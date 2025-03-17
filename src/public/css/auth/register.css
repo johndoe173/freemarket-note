@@ -1,0 +1,62 @@
+/* 会員登録画面のスタイル */
+.register__content {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.register-form__heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register__form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.register__input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.register__button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register__button:hover {
+    background-color: #ff4b4b;
+}
+
+.register__login-link {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register__login-link:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

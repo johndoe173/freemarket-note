@@ -1,0 +1,70 @@
+/* ログインコンテナ */
+.login__content {
+    width: 350px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.login-form__heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* フォーム */
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login__label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ログインボタン */
+.login__button {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login__button:hover {
+    background-color: #e04848;
+}
+
+/* 会員登録リンク */
+.login__register-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: blue;
+}
+
+.login__register-link:hover {
+    text-decoration: underline;
+}
+
+/* エラーメッセージ */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}

@@ -1,0 +1,44 @@
+/* 住所変更画面のスタイル */
+.address-edit {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.address-edit__title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.address-edit__group {
+    margin-bottom: 20px;
+}
+
+.address-edit__group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.address-edit__group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.address-edit__button {
+    display: block;
+    width: 100%;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}

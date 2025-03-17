@@ -1,0 +1,131 @@
+/* 商品詳細画面のスタイル */
+.product-detail {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.product-detail__image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.product-detail__info {
+    flex-grow: 1;
+}
+
+.product-detail__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-detail__brand {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-detail__price {
+    font-size: 24px;
+    color: #ff6b6b;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-detail__buy-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #ff6b6b;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-detail__description,
+.product-detail__info-extra {
+    margin: 20px 0;
+}
+
+.category-tag {
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-detail__comments {
+    margin-top: 30px;
+}
+
+.comment-user-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.comment-username {
+    font-weight: bold;
+}
+
+.comment-text {
+    margin: 10px 0;
+}
+
+.product-detail__textarea {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+}
+
+.product-detail__comment-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-detail__icons {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    gap: 15px;
+    /* アイコン間の間隔 */
+}
+
+/*　いいね機能　*/
+.like-button {
+    border: none;
+    -webkit-text-stroke: 1px #000000;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.like-icon {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.like-icon.liked {
+    color: gold !important;
+}
