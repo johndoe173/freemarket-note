@@ -29,7 +29,7 @@ Laravel を使用して開発されており、ユーザーは商品を出品し
 ---
 
 ## 使用技術
-- **フレームワーク**: Laravel 10
+- **フレームワーク**: Laravel 8.83.8
 - **フロントエンド**: Blade, CSS
 - **データベース**: MySQL
 - **認証**: Laravel Fortify
@@ -38,51 +38,38 @@ Laravel を使用して開発されており、ユーザーは商品を出品し
 
 ## インストール方法
 ### 1️⃣ **リポジトリをクローン**
-```bash
-git clone https://github.com/your-repo/flea-market-app.git
-cd freemarket-app
+- git clone git@github.com:johndoe173/freemarket-note.git
 
 ### 2️⃣ **環境変数を設定**
-```bash
-cp .env.example .env
-- .env を編集して、データベース接続情報を設定してください。
+- cp .env.example .env
+  - .env を編集して、データベース接続情報を設定してください。
 
-### 3️⃣ Dockerビルド**
-```bash
-docker-compose up -d
-composer install
+### 3️⃣ **Dockerビルド**
+- docker-compose up -d
+- composer install
 
-### 4️⃣ アプリキーを生成**
-```bash
-php artisan key:generate
+### 4️⃣ **アプリキーを生成**
+- php artisan key:generate
 
-### 5️⃣ データベースをセットアップ**
-```bash
-php artisan migrate --seed
+### 5️⃣ **データベースをセットアップ**
+- php artisan migrate --seed
 
-### 6️⃣ ストレージリンクを作成**
-```bash
-php artisan storage:link
-- これにより、アップロードされた画像が storage/app/public に保存され、 public/storage から参照できるようになります。
+### 6️⃣ **ストレージリンクを作成**
+- php artisan storage:link
+  - これにより、アップロードされた画像が storage/app/public に保存され、 public/storage から参照できるようになります。
 
 ## メール機能の確認（MailHog）
-```bash
-docker-compose up -d mailhog
--MailHog を起動後、ブラウザで http://localhost:8025/ にアクセスしてください。
+- docker-compose up -d mailhog
+  - MailHog を起動後、ブラウザで http://localhost:8025/ にアクセスしてください。
 
 ---
-
-## 使用技術(実行環境)
-- PHP8.3.0
-- Laravel8.83.27
-- MySQL8.0.26
-- Fortify
-- Mailhog
 
 ## ER図
 ![alt](./er_diagram.png)
 
+---
+
 ## URL
 - 開発環境：http://localhost/
 - phpMyAdmin：http://localhost:8080/
--mailhog:http://localhost:8025/
+- mailhog:http://localhost:8025/
