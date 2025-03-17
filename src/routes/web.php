@@ -47,6 +47,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // マイページ
     Route::get('/mypage', [UserController::class, 'show'])->name('mypage');
 
+    // マイリスト表示
+    Route::get('/mypage/mylist', [ProductController::class, 'mylist'])->name('mypage.mylist');
+
     // プロフィール編集
     Route::get('/mypage/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::post('/mypage/profile', [ProfileController::class, 'update'])->name('profile.update');
