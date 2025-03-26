@@ -13,3 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+# Allow specific image folders inside storage
+!storage/app/public/products/
+!storage/app/public/profile_images/

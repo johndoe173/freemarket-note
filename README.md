@@ -58,7 +58,12 @@ Laravel を使用して開発されており、ユーザーは商品を出品し
 - php artisan storage:link
   - これにより、アップロードされた画像が storage/app/public に保存され、 public/storage から参照できるようになります。
 
-## メール機能の確認（MailHog）
+## メール設定
+-アプリからメール送信するために、.env ファイルに送信元情報を設定してください。
+  -MAIL_FROM_ADDRESS=admin@localhost
+  -MAIL_FROM_NAME="フリマアプリ"
+
+### メール機能の確認（MailHog）
 - docker-compose up -d mailhog
   - MailHog を起動後、ブラウザで http://localhost:8025/ にアクセスしてください。
 
